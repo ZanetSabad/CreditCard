@@ -1,11 +1,9 @@
 import "./style.css"
-import { useRef, useEffect, useState } from "react"
+import { useRef, useEffect } from "react"
 
 
 const CreditCard = () => {
-
-    const [age, setAge] = useState();
-
+    
     const inputsRef = useRef({
       firstInput: null,
       secondInput: null,
@@ -36,8 +34,7 @@ const CreditCard = () => {
         if(isNaN(e.key) && e.key !== 'Backspace' || e.key === " ") {
           e.preventDefault();
         }
-      }
-    
+      }    
   
     return (
       <form id="credit-card-inputs">
