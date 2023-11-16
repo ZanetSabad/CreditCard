@@ -37,7 +37,7 @@ const CreditCard = () => {
       }    
   
     return (
-      <form id="credit-card-inputs">
+      <form class="credit-card-inputs">
         <div>
           <input type="text" maxLength="4" ref={HTMLInputElement => inputsRef.current.firstInput = HTMLInputElement} onChange={changeFocus} onKeyDown={onlyNumbers} />
           <input type="text" maxLength="4" ref={HTMLInputElement => inputsRef.current.secondInput = HTMLInputElement} onChange={changeFocus} onKeyDown={onlyNumbers} />
